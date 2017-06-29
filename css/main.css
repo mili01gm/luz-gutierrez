@@ -1,0 +1,38 @@
+    *,
+    html,
+    body {
+        font-family: sans-serif;
+        overflow: auto;
+        margin: 0;
+        padding: 0;
+    }
+    /*
+===================
+NAV
+===================
+*/
+    
+    nav {
+        border: 0;
+        box-shadow: 0;
+    }
+    
+    .nav-list a {
+        margin: 0 40px;
+        font-weight: 700;
+    }
+    /*
+===================
+HOME
+===================
+*/
+    
+    header h6 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+    
+    header p {
+        font-size: 2.5rem;
+        text-align: justify;
+    }
