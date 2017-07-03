@@ -1,38 +1,117 @@
-    *,
-    html,
-    body {
-        font-family: sans-serif;
-        overflow: auto;
-        margin: 0;
-        padding: 0;
-    }
-    /*
+/*
 ===================
-NAV
+GENERAL / COMMONS
 ===================
 */
-    
-    nav {
-        border: 0;
-        box-shadow: 0;
-    }
-    
-    .nav-list a {
-        margin: 0 40px;
-        font-weight: 700;
-    }
-    /*
+
+body {
+    width: 85%;
+    margin: auto;
+    padding-top: 5%;
+    font-size: 18px;
+    color: #112F41;
+    font-family: 'Lora', serif;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #3B596A;
+}
+
+section {
+    margin: 10% 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/*
 ===================
-HOME
+MENU
 ===================
 */
-    
-    header h6 {
-        font-size: 1.5rem;
-        text-transform: uppercase;
-    }
-    
-    header p {
-        font-size: 2.5rem;
-        text-align: justify;
-    }
+
+
+/*NAV*/
+
+nav {
+    background: 0;
+    box-shadow: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*
+===================
+HOME/about
+===================
+*/
+
+.home {
+    width: 80%;
+    margin: 10% auto;
+}
+
+
+/*
+===================
+WORK
+===================
+*/
+
+.work-item .item-logo {
+    width: 80%;
+    height: 25vw;
+    margin: 10px auto;
+    padding-top: 8%;
+    text-align: center;
+}
+
+.item-logo img {
+    width: 15%;
+}
+
+.work-item .item-info {
+    width: 80%;
+    height: 15vw;
+    margin: -5% auto 5% auto;
+    z-index: 400;
+}
+
+.yape .item-info {
+    border: 0.3vw solid #b2dfdb;
+}
+
+.china .item-info {
+    border: 0.3vw solid #ffca28;
+}
+
+.ux .item-info {
+    border: 0.3vw solid #26a69a;
+}
+
+.social .item-info {
+    border: 0.3vw solid #ffab91;
+}
+
+
+/*
+===================
+CONTACT
+===================
+*/
