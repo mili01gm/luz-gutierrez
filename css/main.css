@@ -32,7 +32,7 @@ section {
 
 .flex {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -47,17 +47,27 @@ MENU
 /*NAV*/
 
 nav {
-    position: fixed;
     top: 0;
     left: 0;
-    height: 10vh;
+    height: 7vh;
     background-color: #fff;
     box-shadow: none;
     font-family: 'Montserrat', sans-serif;
 }
 
-.btn {
+nav a {
+    margin: 0 20px;
+    font-size: .9rem;
+}
+
+nav .btn-flat {
     font-family: 'Montserrat', sans-serif;
+    font-size: .9rem;
+    border: 1px solid #ffb300;
+}
+
+nav .btn-flat:hover {
+    background-color: #ffb300;
 }
 
 
@@ -102,7 +112,7 @@ WORK
 .work-item .item-info {
     width: 80%;
     margin: -5% auto 5% auto;
-    padding: 2.5rem 1.5rem;
+    padding: 2.5rem 3rem;
     z-index: 400;
     font-size: 1rem;
 }
@@ -123,13 +133,27 @@ WORK
     border: 0.3vw solid #ffab91;
 }
 
-.info-part {
-    width: 40%;
-}
-
 
 /*
 ===================
 CONTACT
 ===================
 */
+
+.contact {
+    margin: 2rem auto;
+}
+
+
+/*
+===================
+FOOTER
+===================
+*/
+
+footer {
+    padding: 2.5rem auto;
+    min-height: 1px;
+    height: 25vh;
+    font-size: .9rem;
+}

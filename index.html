@@ -14,18 +14,18 @@
 </head>
 
 <body>
-    <nav class="menu">
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo center blue-grey-text text-darken-3">LG</a>
-            <a href="#" data-activates="mobile-menu" class="left button-collapse show-on-large blue-grey-text text-darken-3"><i class="material-icons">menu</i></a>
-            <div class="side-nav" id="mobile-menu">
-                <li><a href="#" class="brand-logo center blue-grey-text text-darken-3">LG</a></li>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact" class="waves-effect waves-light btn">Contact</a></li>
+    <div class="navbar-fixed">
+        <nav class="menu">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo left blue-grey-text text-darken-3">LG</a>
+                <div class="nav-menu flex right">
+                    <a href="#home" class="blue-grey-text text-darken-3">About</a>
+                    <a href="#work" class="blue-grey-text text-darken-3">Work</a>
+                    <a href="#contact" class="waves-effect waves-amber btn-flat">Contact</a>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
     <section class="home" id="home">
         <div class="text-home">
             <h5 class="flow-text">UX designer and Developer by Laboratoria</h5>
@@ -39,56 +39,84 @@
                 <div class="item-logo teal lighten-2">
                     <img src="assets/img/logo_yape2.png" alt="">
                 </div>
-                <div class="item-info flex">
-                    <div class="info-part">
+                <div class="item-info row">
+                    <div class="col s12 m5">
                         <h5>Yape - mockup</h5>
                         <p>Final Project of Sprint 5</p>
-                        <a href="">Project detail &rarr;</a>
+                        <a href="https://github.com/mili01gm/yape">View project repository &rarr;</a>
                     </div>
-                    <div class="info-part">
-                        <p>For this app mockup we had to use HTML5, CSS3 and JS components as in React. jQuery was also a must and the use of a css framework was optional.
+                    <div class="col s12 m7">
+                        <p>At Laboratoria, each Final Project is personal and for this app mockup we had to use HTML5, CSS3 and JS components as in React, alongside jQuery. <br>Also, the use of a css framework was optional, so I decided to not use one on
+                            my mockup.
                         </p>
+                        <a href="https://yape-demo-laboratoria.herokuapp.com/">Try the app mockup</a>
                     </div>
                 </div>
             </div>
             <div class="china work-item col s12">
                 <div class="item-logo amber darken-1"></div>
-                <div class="item-info flex">
-                    <div>
+                <div class="item-info row">
+                    <div class="col s12 m5">
                         <h5>Come a China</h5>
+                        <p>RetoX project of Sprint 3</p>
                         <a href="">View project detail &rarr;</a>
                     </div>
-                    <div>info</div>
+                    <div class="col s12 m7">
+                        <p>'Reto X' it's a challenge in couples in wich we had to use the HTML5, CSS3 and JS that we had learned until this sprint. At this point, we haven't learned jQuery or CSS frameworks. <br>One of the requirements was to investigate
+                            JS events not seen in class.
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="ux work-item col s12">
                 <div class="item-logo teal darken-1"></div>
-                <div class="item-info flex">
-                    <div>
+                <div class="item-info row">
+                    <div class="col s12 m5">
                         <h5>Re-Pago</h5>
+                        <p>UX project for Sprint 6</p>
                         <a href="">View case study &rarr;</a>
                     </div>
-                    <div>info</div>
+                    <div class="col s12 m7">
+                        <p></p>
+                    </div>
                 </div>
             </div>
-            <div class="social work-item col s12">
+
+
+            <!--To include personal project with functional FireBase-->
+            <!--<div class="social work-item col s12">
                 <div class="item-logo deep-orange lighten-1"></div>
-                <div class="item-info flex">
-                    <div>
+                <div class="item-info row">
+                    <div class="col s12 m5">
                         <h5>Socialize</h5>
                         <a href="">View project detail &rarr;</a>
                     </div>
-                    <div></div>
+                    <div class="col s12 m7"></div>
                 </div>
-            </div>
+            </div>-->
         </div>
     </section>
     <section class="contact row" id="contact">
         <img src="assets/img/working.jpg" class="col s12 m6" alt="">
-        <div class="contact col s12 m6">
-            <h5>Contact</h5>
+        <div class="contact-text col s12 m6">
+            <h4>You made it!</h4>
+            <p class="flow-text">In case you have any question or want to share feeback, get in touch at <a href="mailto:mili01gm@gmail.com">mili01gm@gmail.com</a></p>
         </div>
     </section>
+    <footer class="footer flex">
+        <div>
+            <h5>Luz Gutierrez</h5>
+            <h6>UX Designer - Front End Developer jr.</h6>
+        </div>
+        <div>
+            <a href="mailto:mili01gm@gmail.com">Email |</a>
+            <a href=""> Github |</a>
+            <a href="https://www.linkedin.com/in/luzgutierrez/"> LinkedIn |</a>
+            <a href=""> Medium |</a>
+            <a href=""> Facebook |</a>
+            <a href=""> Twitter</a>
+        </div>
+    </footer>
 
     <script src="js/vendor/jquery-3.2.1.min.js"></script>
     <script src="js/vendor/materialize.min.js"></script>
