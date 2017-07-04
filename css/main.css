@@ -47,7 +47,11 @@ MENU
 /*NAV*/
 
 nav {
-    background: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    background-color: #fff;
     box-shadow: none;
     font-family: 'Montserrat', sans-serif;
 }
@@ -65,7 +69,7 @@ HOME/about
 
 .home {
     width: 80%;
-    margin: 10% auto;
+    margin: 5% auto 10% auto;
 }
 
 
@@ -75,8 +79,12 @@ WORK
 ===================
 */
 
+.work h3 {
+    margin: 4rem auto;
+}
+
 .work-item {
-    margin-top: 10vw;
+    margin-bottom: 5rem;
 }
 
 .work-item .item-logo {
@@ -94,9 +102,9 @@ WORK
 .work-item .item-info {
     width: 80%;
     margin: -5% auto 5% auto;
-    padding: 2.5rem 1rem;
+    padding: 2.5rem 1.5rem;
     z-index: 400;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .yape .item-info {
@@ -113,6 +121,10 @@ WORK
 
 .social .item-info {
     border: 0.3vw solid #ffab91;
+}
+
+.info-part {
+    width: 40%;
 }
 
 
