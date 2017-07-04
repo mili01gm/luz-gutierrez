@@ -10,7 +10,7 @@ body {
     padding-top: 5%;
     font-size: 18px;
     color: #112F41;
-    font-family: 'Lora', serif;
+    font-family: 'Lato', sans-serif;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -22,6 +22,7 @@ h4,
 h5,
 h6 {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     color: #3B596A;
 }
 
@@ -74,6 +75,10 @@ WORK
 ===================
 */
 
+.work-item {
+    margin-top: 10vw;
+}
+
 .work-item .item-logo {
     width: 80%;
     height: 25vw;
@@ -88,9 +93,10 @@ WORK
 
 .work-item .item-info {
     width: 80%;
-    height: 15vw;
     margin: -5% auto 5% auto;
+    padding: 2.5rem 1rem;
     z-index: 400;
+    font-size: 1.1rem;
 }
 
 .yape .item-info {
