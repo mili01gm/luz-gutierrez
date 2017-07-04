@@ -125,6 +125,11 @@ WORK
     border: 0.3vw solid #ffca28;
 }
 
+.china img {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
 .ux .item-info {
     border: 0.3vw solid #26a69a;
 }
@@ -152,8 +157,11 @@ FOOTER
 */
 
 footer {
-    padding: 2.5rem auto;
     min-height: 1px;
     height: 25vh;
     font-size: .9rem;
+}
+
+footer p {
+    font-size: .8rem;
 }
