@@ -5,14 +5,18 @@ GENERAL / COMMONS
 */
 
 body {
-    width: 85%;
-    margin: auto;
-    padding-top: 5%;
+    margin: 0;
+    padding: 0;
     font-size: 18px;
     color: #112F41;
     font-family: 'Lato', sans-serif;
     overflow-y: auto;
     overflow-x: hidden;
+    box-sizing: border-box;
+    background-image: url(../assets/img/night-lights-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 h1,
@@ -44,15 +48,25 @@ MENU
 */
 
 
+/*
+blue-grey-text text-darken-3
+*/
+
+
 /*NAV*/
 
 nav {
     top: 0;
     left: 0;
-    height: 7vh;
-    background-color: #fff;
+    height: 16vh;
+    background: transparent;
     box-shadow: none;
     font-family: 'Montserrat', sans-serif;
+    transition: all .7s ease;
+}
+
+.bg-darker {
+    background: rgba(0, 0, 0, 0.8);
 }
 
 nav a {
@@ -60,14 +74,22 @@ nav a {
     font-size: .9rem;
 }
 
-nav .btn-flat {
+nav a h2 {
+    margin: 2rem;
+}
+
+.nav-menu {
+    margin-top: 1.5rem;
+}
+
+nav .btn {
     font-family: 'Montserrat', sans-serif;
     font-size: .9rem;
-    border: 1px solid #ffb300;
+    background: #ffb300;
 }
 
 nav .btn-flat:hover {
-    background-color: #ffb300;
+    background: transparent;
 }
 
 
@@ -77,9 +99,26 @@ HOME/about
 ===================
 */
 
-.home {
-    width: 80%;
-    margin: 5% auto 10% auto;
+section#home {
+    width: 85%;
+    height: 50vh;
+    margin: 6rem auto 0 auto;
+    padding: 0;
+}
+
+.text-home {
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 6rem;
+    padding: 3rem 6rem;
+}
+
+.text-home h6 {
+    color: #fff;
+}
+
+.text-home p {
+    font-size: 1.1rem;
 }
 
 
@@ -88,6 +127,12 @@ HOME/about
 WORK
 ===================
 */
+
+.work {
+    width: 100%;
+    background-color: #fff;
+    padding-top: 1.2rem;
+}
 
 .work h3 {
     margin: 4rem auto;
@@ -98,21 +143,21 @@ WORK
 }
 
 .work-item .item-logo {
-    width: 80%;
-    height: 25vw;
-    margin: 10px auto;
+    width: 95%;
+    height: 14vw;
+    margin: 5px auto;
     padding-top: 8%;
     text-align: center;
 }
 
 .item-logo img {
-    width: 15%;
+    width: 25%;
 }
 
 .work-item .item-info {
     width: 80%;
     margin: -5% auto 5% auto;
-    padding: 2.5rem 3rem;
+    padding: 2.5rem 1.8rem;
     z-index: 400;
     font-size: 1rem;
 }
