@@ -34,6 +34,10 @@ section {
     margin: 10% 0;
 }
 
+.row {
+    margin-bottom: 0;
+}
+
 .flex {
     display: flex;
     justify-content: space-between;
@@ -124,7 +128,7 @@ section#home {
 
 /*
 ===================
-WORK
+Portfolio
 ===================
 */
 
@@ -132,10 +136,15 @@ WORK
     width: 100%;
     background-color: #fff;
     padding-top: 1.2rem;
+    margin-bottom: 0;
 }
 
 .work h3 {
     margin: 4rem auto;
+}
+
+.work h3 p {
+    font-size: 1.1rem;
 }
 
 .work-item {
@@ -186,12 +195,43 @@ WORK
 
 /*
 ===================
+ABOUT
+===================
+*/
+
+.about {
+    margin-top: 0;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.about h3 p {
+    font-size: 1.1rem;
+}
+
+
+/*
+===================
 CONTACT
 ===================
 */
 
 .contact {
     margin: 2rem auto;
+    text-align: center;
+}
+
+.contact-text {
+    height: 20vh;
+    text-align: center;
+}
+
+.contact-text p {
+    font-size: 1.1rem;
+}
+
+.cv div {
+    text-align: center;
 }
 
 
@@ -205,6 +245,8 @@ footer {
     min-height: 1px;
     height: 25vh;
     font-size: .9rem;
+    padding: 10px 30px;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 footer p {
