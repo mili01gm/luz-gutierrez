@@ -1,3 +1,3 @@
-# Luz Gutierrez | UX - Front End - Design
+# Luz Gutierrez | UX and Web Design
 
 ## Portfolio 
