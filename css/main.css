@@ -15,8 +15,13 @@ body {
     box-sizing: border-box;
     background-image: url(../assets/img/night-lights-bg.jpg);
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
+    filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(src='assets/img/night-lights-bg.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/img/night-lights-bg.jpg', sizingMethod='scale')";
 }
 
 h1,
@@ -28,6 +33,14 @@ h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color: #3B596A;
+}
+
+.bg-darker {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.bg-light {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 section {
@@ -69,13 +82,9 @@ nav {
     transition: all .7s ease;
 }
 
-.bg-darker {
-    background: rgba(0, 0, 0, 0.8);
-}
-
 nav a {
     margin: 0 20px;
-    font-size: .9rem;
+    font-size: 1.2rem;
 }
 
 nav a h2 {
@@ -86,9 +95,12 @@ nav a h2 {
     margin-top: 1.5rem;
 }
 
+nav .menu h2 {
+    font-size: 2rem;
+}
+
 nav .btn {
     font-family: 'Montserrat', sans-serif;
-    font-size: .9rem;
     background: #ffb300;
 }
 
@@ -110,8 +122,29 @@ section#home {
     padding: 0;
 }
 
+.photo-home {
+    background-image: url(../assets/img/foto-perfil.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 25rem;
+    max-width: 80%;
+    height: 40vh;
+    margin: 0 auto;
+    padding: 1rem;
+    opacity: 0.9;
+}
+
+.photo-info {
+    width: 25rem;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
 .text-home {
-    background-color: rgba(0, 0, 0, 0.2);
     text-align: center;
     margin-top: 6rem;
     padding: 3rem 6rem;
@@ -207,6 +240,21 @@ ABOUT
 
 .about h3 p {
     font-size: 1.1rem;
+}
+
+
+/*
+===================
+CONTACT
+===================
+*/
+
+.cv-div {
+    width: 40%;
+    max-width: 100%;
+    height: 20vh;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 
