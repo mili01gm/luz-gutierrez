@@ -135,7 +135,8 @@ section#home {
     height: 40vh;
     margin: 4rem auto 0 auto;
     padding: 1rem;
-    opacity: 0.9;
+    opacity: 0.95;
+    border: 1px solid #cecece;
 }
 
 .photo-info {
@@ -143,6 +144,11 @@ section#home {
     max-width: 80%;
     margin: 0 auto;
     padding: 1rem;
+}
+
+.photo-info .home-social a {
+    margin: 0 10px;
+    font-size: 1.6rem;
 }
 
 .text-home {
@@ -302,4 +308,9 @@ footer {
 
 footer p {
     font-size: .8rem;
+}
+
+footer .social a {
+    font-size: 1.2rem;
+    margin: 0 10px;
 }
