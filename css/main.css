@@ -132,7 +132,7 @@ section#home {
     background-size: cover;
     width: 25rem;
     max-width: 80%;
-    height: 40vh;
+    height: 38vh;
     margin: 4rem auto 0 auto;
     padding: 1rem;
     opacity: 0.95;
@@ -154,7 +154,7 @@ section#home {
 .text-home {
     text-align: center;
     margin-top: 6rem;
-    padding: 3rem 6rem;
+    padding: 2.8rem 4.8rem;
 }
 
 .text-home h6 {
@@ -181,6 +181,7 @@ Portfolio
 
 .work h3 {
     margin: 4rem auto;
+    line-height: 80%;
 }
 
 .work h3 p {
@@ -244,8 +245,17 @@ ABOUT
     padding: 4rem 2rem;
 }
 
+.about h3 {
+    line-height: 80%;
+}
+
 .about h3 p {
     font-size: 1.1rem;
+}
+
+.about .info-exp .exp-item {
+    margin-top: 3rem;
+    margin-bottom: 3.5rem;
 }
 
 
