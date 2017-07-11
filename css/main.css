@@ -83,7 +83,6 @@ nav {
 }
 
 nav a {
-    margin: 0 20px;
     font-size: 0.9rem;
 }
 
@@ -92,17 +91,27 @@ nav h2 {
     margin-right: 20px;
 }
 
+nav .lang {
+    margin-bottom: 2rem;
+}
+
+.lang p a {
+    margin: 0 10px;
+}
+
 .nav-menu {
     margin-top: 1.5rem;
 }
 
-nav .lang {
-    margin-bottom: 2rem;
+.nav-menu .hide-on-small-only {
+    margin-right: 4rem;
 }
 
 nav .btn {
     font-family: 'Montserrat', sans-serif;
     background: #ffb300;
+    margin-top: 5px;
+    margin-right: 7px;
 }
 
 nav .btn-flat:hover {
@@ -132,29 +141,32 @@ section#home {
     background-size: cover;
     width: 25rem;
     max-width: 80%;
-    height: 38vh;
+    height: 40vh;
     margin: 4rem auto 0 auto;
     padding: 1rem;
     opacity: 0.95;
-    border: 1px solid #cecece;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 .photo-info {
     width: 25rem;
     max-width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 2rem auto;
     padding: 1rem;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .photo-info .home-social a {
-    margin: 0 10px;
+    margin: 0 7px;
     font-size: 1.6rem;
 }
 
 .text-home {
     text-align: center;
-    margin-top: 6rem;
-    padding: 2.8rem 4.8rem;
+    margin-top: 10rem;
+    padding: 2.8rem 3.2rem;
 }
 
 .text-home h6 {
@@ -172,6 +184,10 @@ Portfolio
 ===================
 */
 
+section#work {
+    margin: 2rem 0;
+}
+
 .work {
     width: 100%;
     background-color: #fff;
@@ -179,12 +195,12 @@ Portfolio
     margin-bottom: 0;
 }
 
-.work h3 {
+.work h4 {
     margin: 4rem auto;
     line-height: 80%;
 }
 
-.work h3 p {
+.work h4 p {
     font-size: 1.1rem;
 }
 
@@ -194,10 +210,11 @@ Portfolio
 
 .work-item .item-logo {
     width: 95%;
-    height: 14vw;
+    height: 18vw;
     margin: 5px auto;
     padding-top: 8%;
     text-align: center;
+    border-radius: 20px;
 }
 
 .item-logo img {
@@ -210,6 +227,7 @@ Portfolio
     padding: 2.5rem 1.8rem;
     z-index: 400;
     font-size: 1rem;
+    border-radius: 25px;
 }
 
 .yape .item-info {
@@ -241,21 +259,35 @@ ABOUT
 */
 
 .about {
-    margin-top: 2rem;
-    padding: 4rem 2rem;
+    margin-top: 3rem;
+    padding: 4rem .6rem;
 }
 
-.about h3 {
+.about h4 {
     line-height: 80%;
 }
 
-.about h3 p {
+.about h4 p {
     font-size: 1.1rem;
 }
 
 .about .info-exp .exp-item {
-    margin-top: 3rem;
-    margin-bottom: 3.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    padding: 1.2rem .4rem;
+    border-radius: 25px;
+}
+
+.about .info-exp .exp-item div:first-child {
+    border-left: .4rem solid #ffb300;
+}
+
+.about .info-exp .exp-item div {
+    text-align: left;
+}
+
+.about .info-exp .exp-item div h6 {
+    font-size: .9rem;
 }
 
 
@@ -286,9 +318,11 @@ CONTACT
 .contact {
     margin: 2rem auto;
     text-align: center;
+    padding: 2rem;
 }
 
 .contact-text {
+    margin-top: .5rem;
     height: 20vh;
     text-align: center;
 }
@@ -310,9 +344,9 @@ FOOTER
 
 footer {
     min-height: 1px;
-    height: 15vh;
+    height: 16vh;
     font-size: .9rem;
-    padding: 10px 30px;
+    padding: 5px 30px;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -321,6 +355,6 @@ footer p {
 }
 
 footer .social a {
-    font-size: 1.2rem;
-    margin-left: 7px;
+    font-size: 1.5rem;
+    margin-left: 14px;
 }
