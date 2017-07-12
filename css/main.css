@@ -40,7 +40,7 @@ h6 {
 }
 
 .bg-light {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.35);
 }
 
 section {
@@ -55,6 +55,10 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.fa {
+    color: #64b5f6;
 }
 
 
@@ -86,9 +90,10 @@ nav a {
     font-size: 0.9rem;
 }
 
-nav h2 {
-    font-size: 2.5rem;
-    margin-right: 20px;
+nav img {
+    width: 4.5rem;
+    margin-top: 1.8rem;
+    margin-right: 2rem;
 }
 
 nav .lang {
@@ -111,7 +116,7 @@ nav .btn {
     font-family: 'Montserrat', sans-serif;
     background: #ffb300;
     margin-top: 5px;
-    margin-right: 7px;
+    margin-right: 2px;
 }
 
 nav .btn-flat:hover {
@@ -133,15 +138,15 @@ section#home {
 }
 
 .photo-home {
-    background-image: url(../assets/img/foto-perfil.jpg);
+    background-image: url(../assets/img/perfil-photo.jpg);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    width: 25rem;
-    max-width: 80%;
-    height: 40vh;
+    width: 20rem;
+    max-width: 70%;
+    height: 38vh;
     margin: 4rem auto 0 auto;
     padding: 1rem;
     opacity: 0.95;
@@ -150,10 +155,10 @@ section#home {
 }
 
 .photo-info {
-    width: 25rem;
-    max-width: 80%;
+    width: 20rem;
+    max-width: 70%;
     margin: 0 auto 2rem auto;
-    padding: 1rem;
+    padding: 0.4rem 0;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
@@ -165,7 +170,7 @@ section#home {
 
 .text-home {
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 3rem;
     padding: 2.8rem 3.2rem;
 }
 
@@ -231,7 +236,7 @@ section#work {
 }
 
 .yape .item-info {
-    border: 0.3vw solid #b2dfdb;
+    border: 0.3vw solid #7986cb;
 }
 
 .china .item-info {
@@ -244,11 +249,7 @@ section#work {
 }
 
 .ux .item-info {
-    border: 0.3vw solid #26a69a;
-}
-
-.social .item-info {
-    border: 0.3vw solid #ffab91;
+    border: 0.3vw solid #9fa8da;
 }
 
 
@@ -269,6 +270,19 @@ ABOUT
 
 .about h4 p {
     font-size: 1.1rem;
+}
+
+.about .skills {
+    margin: 4rem auto;
+    width: 28%;
+}
+
+.progress {
+    background-color: #e0e0e0;
+}
+
+.progress .determinate {
+    background-color: #ffb300;
 }
 
 .about .info-exp .exp-item {
@@ -303,9 +317,8 @@ CONTACT
 
 .cv-div {
     max-width: 100%;
-    height: 38vh;
     margin: 3rem auto;
-    padding-top: 6rem;
+    padding: 3rem;
 }
 
 
@@ -318,12 +331,11 @@ CONTACT
 .contact {
     margin: 2rem auto;
     text-align: center;
-    padding: 2rem;
+    padding: 2.5rem;
 }
 
 .contact-text {
     margin-top: .5rem;
-    height: 20vh;
     text-align: center;
 }
 
