@@ -9,19 +9,15 @@ body {
     padding: 0;
     font-size: 18px;
     color: #112F41;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     overflow-y: auto;
     overflow-x: hidden;
     box-sizing: border-box;
-    background-image: url(../assets/img/night-lights-bg.jpg);
+    background-image: url(../assets/img/bg-img3.jpg);
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(src='assets/img/night-lights-bg.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/img/night-lights-bg.jpg', sizingMethod='scale')";
 }
 
 h1,
@@ -53,12 +49,18 @@ section {
 
 .flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .fa {
-    color: #64b5f6;
+    color: #5c6bc0;
+    transition: all 0.5s ease;
+}
+
+.fa:hover {
+    color: #fff;
+    transform: scale(1.5);
 }
 
 
@@ -88,6 +90,7 @@ nav {
 
 nav a {
     font-size: 0.9rem;
+    transition: all 0.5s ease;
 }
 
 nav img {
@@ -112,6 +115,11 @@ nav .lang {
     margin-right: 4rem;
 }
 
+.nav-menu .hide-on-small-only:hover {
+    text-decoration: underline;
+    font-size: 1.1rem;
+}
+
 nav .btn {
     font-family: 'Montserrat', sans-serif;
     background: #ffb300;
@@ -119,8 +127,8 @@ nav .btn {
     margin-right: 2px;
 }
 
-nav .btn-flat:hover {
-    background: transparent;
+nav .btn:hover {
+    background-color: #5c6bc0;
 }
 
 
@@ -131,55 +139,61 @@ HOME/about
 */
 
 section#home {
-    width: 85%;
-    height: 50vh;
-    margin: 6rem auto 0 auto;
-    padding: 0;
-}
-
-.photo-home {
-    background-image: url(../assets/img/perfil-photo.jpg);
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    width: 20rem;
-    max-width: 70%;
-    height: 38vh;
-    margin: 4rem auto 0 auto;
-    padding: 1rem;
-    opacity: 0.95;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    width: 95%;
+    height: 75vh;
+    margin: 8rem auto 0 auto;
+    padding-top: 2rem;
 }
 
 .photo-info {
-    width: 20rem;
-    max-width: 70%;
-    margin: 0 auto 2rem auto;
-    padding: 0.4rem 0;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    text-align: center;
+    width: 50rem;
+    max-width: 95%;
+    margin: 1rem auto 2rem auto;
+    padding: 2rem 0 0.4rem 0;
+}
+
+.photo-info h3 {
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.photo-info h3:hover {
+    cursor: pointer;
+    color: #5c6bc0;
+}
+
+.photo-info hr {
+    margin: 3rem auto 1rem auto;
+}
+
+.photo-info h5 {
+    margin: 1rem auto 2.5rem auto;
 }
 
 .photo-info .home-social a {
-    margin: 0 7px;
-    font-size: 1.6rem;
+    margin: 0 10px;
+    font-size: 1.8rem;
 }
 
 .text-home {
     text-align: center;
-    margin-top: 3rem;
-    padding: 2.8rem 3.2rem;
+    padding: 3rem 2rem;
 }
 
-.text-home h6 {
-    color: #fff;
+.text-home div.m3 {
+    margin: 5rem auto;
 }
 
 .text-home p {
+    padding-top: 2rem;
     font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.text-home blockquote {
+    font-style: italic;
 }
 
 
@@ -215,24 +229,30 @@ section#work {
 
 .work-item .item-logo {
     width: 95%;
-    height: 18vw;
+    height: 15vw;
     margin: 5px auto;
     padding-top: 8%;
     text-align: center;
-    border-radius: 20px;
 }
 
 .item-logo img {
     width: 25%;
 }
 
+.item-info a {
+    color: #5c6bc0;
+}
+
+.item-info a:hover {
+    text-decoration: underline;
+}
+
 .work-item .item-info {
     width: 80%;
-    margin: -5% auto 5% auto;
-    padding: 2.5rem 1.8rem;
+    margin: -10% auto 5% auto;
+    padding: 3.5rem 1.8rem 2.5rem 1.8rem;
     z-index: 400;
     font-size: 1rem;
-    border-radius: 25px;
 }
 
 .yape .item-info {
@@ -266,48 +286,68 @@ ABOUT
 
 .about h4 {
     line-height: 80%;
+    margin: 3rem auto 0 auto;
 }
 
 .about h4 p {
     font-size: 1.1rem;
 }
 
+.about h5 {
+    margin: 2rem auto;
+}
+
 .about .skills {
-    margin: 4rem auto;
+    margin: 2rem auto;
     width: 28%;
+}
+
+.about .skills h6 {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.about .skills li {
+    font-size: 1.05rem;
 }
 
 .progress {
     background-color: #e0e0e0;
+    height: 1.2vh;
 }
 
 .progress .determinate {
     background-color: #ffb300;
+    height: 1.2vh;
 }
 
-.about .info-exp .exp-item {
+.about .pre-work {
+    margin-top: 4rem;
+}
+
+.about .pre-work .exp-item {
     margin-top: 2rem;
     margin-bottom: 2.5rem;
     padding: 1.2rem .4rem;
     border-radius: 25px;
 }
 
-.about .info-exp .exp-item div:first-child {
+.about .pre-work .exp-item div:first-child {
     border-left: .4rem solid #ffb300;
 }
 
-.about .info-exp .exp-item div {
+.about .pre-work .exp-item div {
     text-align: left;
 }
 
-.about .info-exp .exp-item div h6 {
+.about .pre-work .exp-item div h6 {
     font-size: .9rem;
 }
 
 
 /*
 ===================
-CONTACT
+CV
 ===================
 */
 
@@ -318,7 +358,7 @@ CONTACT
 .cv-div {
     max-width: 100%;
     margin: 3rem auto;
-    padding: 3rem;
+    padding: 4rem;
 }
 
 
@@ -331,7 +371,7 @@ CONTACT
 .contact {
     margin: 2rem auto;
     text-align: center;
-    padding: 2.5rem;
+    padding: 3.5rem 2.5rem;
 }
 
 .contact-text {
@@ -343,8 +383,22 @@ CONTACT
     font-size: 1.1rem;
 }
 
+.contact-text p a {
+    color: #5c6bc0;
+}
+
+.contact-text p a:hover {
+    text-decoration: underline;
+}
+
 .cv div {
     text-align: center;
+}
+
+.contact .social a {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    color: #5c6bc0;
 }
 
 
@@ -356,17 +410,12 @@ FOOTER
 
 footer {
     min-height: 1px;
-    height: 16vh;
+    min-height: 1px;
     font-size: .9rem;
     padding: 5px 30px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 footer p {
-    font-size: .8rem;
-}
-
-footer .social a {
-    font-size: 1.5rem;
-    margin-left: 14px;
+    font-size: 1rem;
 }
