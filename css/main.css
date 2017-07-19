@@ -53,6 +53,11 @@ section {
     align-items: center;
 }
 
+.flex-vcenter {
+    display: flex;
+    align-items: center;
+}
+
 .fa {
     color: #5c6bc0;
     transition: all 0.5s ease;
@@ -81,11 +86,20 @@ blue-grey-text text-darken-3
 nav {
     top: 0;
     left: 0;
-    height: 12vh;
     background: transparent;
     box-shadow: none;
+    height: 14vh;
+    padding: 1rem 0.2rem;
     font-family: 'Montserrat', sans-serif;
     transition: all .7s ease;
+}
+
+nav .menu .bg-darker {
+    padding: 2rem 0;
+}
+
+nav .nav-wrapper {
+    width: 100%;
 }
 
 nav a {
@@ -94,25 +108,19 @@ nav a {
 }
 
 nav img {
-    width: 4.5rem;
-    margin-top: 1.8rem;
-    margin-right: 2rem;
+    width: 30%;
 }
 
-nav .lang {
-    margin-bottom: 2rem;
+.lang p {
+    margin: 0;
 }
 
 .lang p a {
     margin: 0 10px;
 }
 
-.nav-menu {
-    margin-top: 1.5rem;
-}
-
 .nav-menu .hide-on-small-only {
-    margin-right: 4rem;
+    margin: 0 10px;
 }
 
 .nav-menu .hide-on-small-only:hover {
@@ -123,8 +131,6 @@ nav .lang {
 nav .btn {
     font-family: 'Montserrat', sans-serif;
     background: #ffb300;
-    margin-top: 5px;
-    margin-right: 2px;
 }
 
 nav .btn:hover {
@@ -182,11 +188,11 @@ section#home {
 }
 
 .text-home div.m3 {
-    margin: 5rem auto;
+    height: 100%;
 }
 
 .text-home p {
-    padding-top: 2rem;
+    margin: 0;
     font-size: 1.1rem;
     font-weight: 400;
     line-height: 2rem;
@@ -309,6 +315,10 @@ ABOUT
 
 .about .skills li {
     font-size: 1.05rem;
+}
+
+.how h6 {
+    font-size: 1.1rem;
 }
 
 .progress {
