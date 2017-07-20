@@ -13,7 +13,7 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
     box-sizing: border-box;
-    background-image: url(../assets/img/bg-img3.jpg);
+    background-image: url(../assets/img/bg-img2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -39,8 +39,11 @@ h6 {
     background-color: rgba(0, 0, 0, 0.35);
 }
 
-section {
-    margin: 10% 0;
+section,
+.text-home,
+footer {
+    margin: 3rem auto 0 auto;
+    padding: 3rem 2rem;
 }
 
 .row {
@@ -88,7 +91,7 @@ nav {
     left: 0;
     background: transparent;
     box-shadow: none;
-    height: 14vh;
+    height: 12vh;
     padding: 1rem 0.2rem;
     font-family: 'Montserrat', sans-serif;
     transition: all .7s ease;
@@ -116,7 +119,7 @@ nav img {
 }
 
 .lang p a {
-    margin: 0 10px;
+    margin: 0 10px 5px 10px;
 }
 
 .nav-menu .hide-on-small-only {
@@ -147,21 +150,22 @@ HOME/about
 section#home {
     width: 95%;
     height: 75vh;
-    margin: 8rem auto 0 auto;
-    padding-top: 2rem;
+    /* margin: 8rem auto 0 auto;
+    padding-top: 2rem; */
 }
 
 .photo-info {
     text-align: center;
     width: 50rem;
-    max-width: 95%;
-    margin: 1rem auto 2rem auto;
+    max-width: 100%;
+    margin: 3rem auto 2rem auto;
     padding: 2rem 0 0.4rem 0;
 }
 
 .photo-info h3 {
     color: #fff;
     transition: all 0.5s ease;
+    margin-bottom: 2rem;
 }
 
 .photo-info h3:hover {
@@ -169,11 +173,9 @@ section#home {
     color: #5c6bc0;
 }
 
-.photo-info hr {
-    margin: 3rem auto 1rem auto;
-}
-
-.photo-info h5 {
+.photo-info hr,
+.photo-info h5,
+.photo-info .home-social {
     margin: 1rem auto 2.5rem auto;
 }
 
@@ -183,7 +185,7 @@ section#home {
 }
 
 .text-home {
-    text-align: center;
+    text-align: justify;
     padding: 3rem 2rem;
 }
 
@@ -210,14 +212,14 @@ Portfolio
 */
 
 section#work {
-    margin: 2rem 0;
+    /* margin: 2rem 0; */
 }
 
 .work {
     width: 100%;
     background-color: #fff;
-    padding-top: 1.2rem;
-    margin-bottom: 0;
+    /* padding-top: 1.2rem; */
+    /* margin-bottom: 0; */
 }
 
 .work h4 {
@@ -245,6 +247,10 @@ section#work {
     width: 25%;
 }
 
+.item-info p {
+    margin: 15px auto;
+}
+
 .item-info a {
     color: #5c6bc0;
 }
@@ -254,11 +260,12 @@ section#work {
 }
 
 .work-item .item-info {
-    width: 80%;
+    width: 90%;
+    height: 400px;
     margin: -10% auto 5% auto;
-    padding: 3.5rem 1.8rem 2.5rem 1.8rem;
+    padding: 3rem 0;
     z-index: 400;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .yape .item-info {
@@ -285,10 +292,11 @@ ABOUT
 ===================
 */
 
-.about {
+
+/* .about {
     margin-top: 3rem;
     padding: 4rem .6rem;
-}
+} */
 
 .about h4 {
     line-height: 80%;
@@ -361,13 +369,13 @@ CV
 ===================
 */
 
-.cv {
+
+/* .cv {
     margin: 0;
-}
+} */
 
 .cv-div {
     max-width: 100%;
-    margin: 3rem auto;
     padding: 4rem;
 }
 
@@ -379,14 +387,17 @@ CONTACT
 */
 
 .contact {
-    margin: 2rem auto;
+    /* margin: 2rem auto; */
     text-align: center;
-    padding: 3.5rem 2.5rem;
+    /* padding: 3.5rem 2.5rem; */
 }
 
 .contact-text {
-    margin-top: .5rem;
     text-align: center;
+}
+
+.contact-text h4 {
+    margin-top: 0;
 }
 
 .contact-text p {
